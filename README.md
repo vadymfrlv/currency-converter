@@ -28,7 +28,7 @@ is also implemented, informing the user in case any errors occur.
 
 To test and use the application, follow these steps:
 
-1. Click the `<> CODE`` tab above and select "Download ZIP" to get all the necessary files used by
+1. Click the `<> CODE` tab above and select `Download ZIP` to get all the necessary files used by
    the application.
 2. Extract the downloaded ZIP archive on your computer.
 3. Open the extracted directory and run the index.html file in your browser.
