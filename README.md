@@ -22,7 +22,7 @@ is also implemented, informing the user in case any errors occur.
 
 ## Demo 🖥
 
-<!-- ![Demo](https://raw.githubusercontent.com/vadymfrlv/storage/main/demos/cyrrencyConverter/currencyConverter-demo.gif) -->
+![Demo](https://raw.githubusercontent.com/vadymfrlv/storage/main/demos/cyrrencyConverter/currencyConverter-demo.gif)
 
 ## Installation ⚡️
 
