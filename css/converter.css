@@ -1,0 +1,158 @@
+.main-container {
+  height: 85vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* TITLE PART */
+.title-wrapper {
+  position: relative;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 35px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+.title::after {
+  content: '';
+
+  position: absolute;
+  top: -17%;
+  left: 42.7%;
+  width: 50px;
+  height: 50px;
+
+  background-image: url(../images/currency-exchange.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* CONVERTER PART */
+.converter-wrapper {
+  width: 500px;
+
+  margin-top: 25px;
+  padding: 30px;
+
+  border-radius: 7px;
+  background-color: #ffffff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+/* exchange rate */
+.exchange-rate-wrapper {
+  width: 430px;
+}
+.currency-from-wrapper {
+  display: flex;
+  align-items: center;
+
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.currency-to-wrapper {
+  margin-top: 10px;
+  padding-bottom: 5px;
+
+  font-weight: 700;
+  font-size: 30px;
+
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.currency-name-to {
+  font-size: 20px;
+}
+
+/* time */
+.time-wrapper {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  margin-top: 17px;
+
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* disclaimer */
+.disclaimer {
+  cursor: pointer;
+}
+
+.tooltip {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  height: 275px;
+  width: 440px;
+  z-index: 1;
+
+  display: none;
+  padding: 20px;
+
+  font-weight: 500;
+  font-size: 14px;
+
+  border: none;
+  border-radius: 7px;
+  background-color: #f1f1f1;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+  overflow-y: auto;
+}
+
+.disclaimer.clicked + .tooltip {
+  display: block;
+}
+
+/* converter's inputs and selects */
+.converter-line {
+  position: relative;
+
+  margin-top: 10px;
+  padding: 10px;
+
+  border: 2px solid #c3c3c3;
+  border-radius: 6px;
+}
+
+.converter-line:last-child {
+  margin-top: 15px;
+}
+
+.converter-line::before {
+  content: '';
+
+  position: absolute;
+  top: 5px;
+  bottom: 0;
+  left: 122px;
+  height: 30px;
+  width: 1px;
+
+  background-color: #c3c3c3;
+}
+
+.currency-amount {
+  width: 100px;
+
+  display: block;
+  padding: 0;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+
+  color: #1f1f1f;
+  border: none;
+}

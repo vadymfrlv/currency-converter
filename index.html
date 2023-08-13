@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/converter.css" />
+    <link rel="stylesheet" href="./css/custom-selector.css" />
+    <link rel="stylesheet" href="./css/error.css" />
+  </head>
+
+  <body>
+    <main class="main-container">
+      <!-- TITLE -->
+      <div class="title-wrapper">
+        <h1 class="title">Currency&nbsp;&nbsp;&nbsp;&nbsp;Converter</h1>
+      </div>
+
+      <div class="converter-wrapper">
+        <!-- EXCHANGE RATE -->
+        <div class="exchange-rate-wrapper">
+          <div class="currency-from-wrapper">
+            <span>1&nbsp;</span>
+            <p class="currency-name-from"></p>
+            <span>&nbsp;equals</span>
+          </div>
+          <div class="currency-to-wrapper">
+            <span class="currency-rate"></span>
+            <span class="currency-name-to"></span>
+          </div>
+        </div>
+
+        <!-- TIME AND DISCLAIMER -->
+        <div class="time-wrapper">
+          <div class="time"></div>
+          <div class="disclaimer">&nbsp;&#xb7; Disclaimer</div>
+          <div class="tooltip">
+            EXCEPT WHERE EXPRESSLY PROVIDED OTHERWISE, THE SITE, AND ALL CONTENT PROVIDED ON OR
+            THROUGH THE SITE, ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS. THE COMPANY
+            EXPRESSLY DISCLAIMS ALL WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING,
+            BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+            PURPOSE AND NON-INFRINGEMENT WITH RESPECT TO THE SITE AND ALL CONTENT PROVIDED ON OR
+            THROUGH THE SITE. THE COMPANY MAKES NO WARRANTY THAT: (A) THE SITE OR CONTENT WILL MEET
+            YOUR REQUIREMENTS; (B) THE SITE WILL BE AVAILABLE ON AN UNINTERRUPTED, TIMELY, SECURE,
+            OR ERROR-FREE BASIS; (C) THE RESULTS THAT MAY BE OBTAINED FROM THE USE OF THE SITE OR
+            ANY CONTENT PROVIDED ON OR THROUGH THE SITE WILL BE ACCURATE OR RELIABLE; OR (D) THE
+            QUALITY OF ANY CONTENT PURCHASED OR OBTAINED BY YOU ON OR THROUGH THE SITE WILL MEET
+            YOUR EXPECTATIONS. ANY CONTENT ACCESSED, DOWNLOADED OR OTHERWISE OBTAINED ON OR THROUGH
+            THE USE OF THE SITE IS USED AT YOUR OWN DISCRETION AND RISK. THE COMPANY SHALL HAVE NO
+            RESPONSIBILITY FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR LOSS OF DATA THAT RESULTS FROM
+            THE DOWNLOAD OR USE OF CONTENT. THE COMPANY RESERVES THE RIGHT TO MAKE CHANGES OR
+            UPDATES TO, AND MONITOR THE USE OF, THE SITE AND CONTENT PROVIDED ON OR THROUGH THE SITE
+            AT ANY TIME WITHOUT NOTICE.
+          </div>
+        </div>
+
+        <!-- CONVERTER FROM-->
+        <div class="converter-line">
+          <input class="currency-amount currency-amount-from" type="numeric" min="0" />
+          <div class="select-wrapper">
+            <select class="select-currency select-currency-from" name="currency"></select>
+          </div>
+        </div>
+        <!-- CONVERTER TO -->
+        <div class="converter-line">
+          <input class="currency-amount currency-amount-to" type="numeric" min="0" readonly />
+          <div class="select-wrapper">
+            <select class="select-currency select-currency-to" name="currency"></select>
+          </div>
+        </div>
+      </div>
+
+      <div class="error-container">
+        <div class="error-card">
+          <p class="error-text"></p>
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/custom-selector.js"></script>
+  </body>
+</html>
